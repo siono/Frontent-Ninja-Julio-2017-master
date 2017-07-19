@@ -1,1 +1,3 @@
 /node_modules/
+# Carpeta a ignorar
+node_modules/
