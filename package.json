@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "José Carlos Esteban",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
+    "gulp-html-import": "0.0.2",
     "gulp-notify": "^3.0.0",
     "gulp-sass": "^3.1.0",
     "node-sass": "^4.5.3"

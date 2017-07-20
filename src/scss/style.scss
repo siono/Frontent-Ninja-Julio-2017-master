@@ -1,6 +1,10 @@
-$background-color: lightblue;
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Zilla+Slab');
+@import "variables";
+@import "responsive-utils";
+@import "html-tags";
 
-body{
-    background: $background-color;
-    font-size: 20px;
-}
+//componets
+@import "components/_container.scss";
+@import "components/header";
+@import "components/songs-list";
