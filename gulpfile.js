@@ -17,7 +17,7 @@ var cssnano = require("cssnano");//minificar el css
 gulp.task("default",["html","sass","js"], function(){
 
     //iniciamos el servidor de desarrollo
-    browserSync.init({server: "dist/"}); // arranca el servidor en la carpeta src
+    browserSync.init({proxy: "http://127.0.0.1:3100/"}); // configuro el browserSync en modo proxy en el puerto 3100
     
     //observa  cambios en los archivos SASS, y entones ejecuta la tarea 'sass'
     gulp.watch(["src/scss/*.scss","src/scss/**/*.scss"], ["sass"]);
@@ -71,7 +71,7 @@ gulp.task("js", function(){
         .pipe(buffer()) // convertimos a buffer para que funcione el siguiente pipe
         .pipe(sourcemaps.init({loadMaps: true})) //captura los courcempas del archivo fuente
         .pipe(uglify()) //minificamos el JavaScript
-        .pipe(sourcemaps.write('/')) //guarda los sorucemaps en el mismo directorio que el archivo fuente
+        .pipe(sourcemaps.write('/')) //guarda los sourcemaps en el mismo directorio que el archivo fuente
         .pipe(gulp.dest("dist/js")) // lo guardamos en la carpeta dist
         .pipe(browserSync.stream()) // recargamos el navegador
         .pipe(notify("JS Compilado"));
