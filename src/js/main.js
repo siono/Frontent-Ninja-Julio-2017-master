@@ -9,8 +9,8 @@ import PubSub from 'pubsub-js';
 const songService = new SongsService("/songs/"); //le pasamos la ruta donde el api rest nos devuelve el json y generamos los métodos ajax.
 const songListUIManager = new UIManager(".songs-list"); //gestiona los estado de carga
 
-const songsListManager = new SongsListManager(songService,songListUIManager);
+const songsListManager = new SongsListManager(songService,songListUIManager,PubSub);
 songsListManager.init(); 
 
-const songFormManager = new SongFormManager(".song-form", songService);
+const songFormManager = new SongFormManager(".song-form", songService,PubSub);
 songFormManager.init();
