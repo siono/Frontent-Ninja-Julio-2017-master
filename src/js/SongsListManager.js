@@ -1,4 +1,5 @@
 const $ = require("jquery");
+import PubSub from 'pubsub-js';
 
 export default class SongsListManager {
 
@@ -9,6 +10,9 @@ export default class SongsListManager {
 
     init() {
         this.loadSongs();
+        PubSub.subscribe("new-song",(topic,song)=>{
+            this.loadSongs();
+        })
     }
 
     loadSongs() {

@@ -29,8 +29,8 @@ export default class SongsService {
     create(song,successCallback, errorCallback) {
         $.ajax({
             url: this.url,
-            methode: "post",
             data: song,
+            method: "post",
             success: successCallback,
             error: errorCallback
         });
@@ -49,7 +49,7 @@ export default class SongsService {
     update(song,successCallback, errorCallback) {
         $.ajax({
             url: `${this.url}${song.id}`,
-            methode: "update",
+            method: "put",
             data: song,
             success: successCallback,
             error: errorCallback
@@ -60,7 +60,7 @@ export default class SongsService {
     delete(songId,successCallback, errorCallback) {
         $.ajax({
             url: `${this.url}${songId}`,
-            methode: 'delete',
+            method: "delete",
             success: successCallback,
             error: errorCallback
         });
