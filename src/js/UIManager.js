@@ -7,7 +7,7 @@ export default class UIManager{
     }
 
     setEmpty(){
-        his.element.removeClass(this.uiStateClasses).addClass("emptly");
+        this.element.removeClass(this.uiStateClasses).addClass("emptly");
     }
 
     setLoading(){
@@ -24,5 +24,26 @@ export default class UIManager{
 
     setIdeal(){
         this.element.removeClass(this.uiStateClasses).addClass("ideal");       
+    }
+
+    setEmptyHtml(html){
+        //busca un descendiente de this.element, que tenga las classes CSS ui-status y empty y le asigna el HTML
+        this.element.find(".ui-status.empty").html(html);
+    }
+
+    setLoadingHtml(html){
+         this.element.find(".ui-status.loading").html(html);
+    }
+
+    setErrorHtml(html){
+         this.element.find(".ui-status.error").html(html);
+    }
+
+    setPartialHtml(html){
+         this.element.find(".ui-status.partial").html(html);
+    }
+
+    setIdealHtml(html){
+         this.element.find(".ui-status.ideal").html(html);
     }
 }
