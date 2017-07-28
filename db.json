@@ -19,12 +19,6 @@
       "cover_url": "https://images.genius.com/047e4c2909c839d4acc141d9cc746157.1000x1000x1.jpg"
     },
     {
-      "id": 4,
-      "title": "Shadow of the day",
-      "artist": "Linkin Park",
-      "cover_url": "http://ringtonezzz.com/UserFiles/cover/img/Shadow_of_the_Day-Linkin_Park.jpg"
-    },
-    {
       "id": 5,
       "title": "You're in love with a psycho",
       "artist": "Kasabian",
@@ -37,52 +31,10 @@
       "id": 6
     },
     {
-      "artist": "Melendi",
-      "title": "Por las barbas",
-      "cover_url": "",
-      "id": 7
-    },
-    {
-      "artist": "Fito",
-      "title": "Rojitas las orejas",
-      "cover_url": "",
-      "id": 8
-    },
-    {
-      "artist": "Mana",
-      "title": "Rayando el sol",
-      "cover_url": "",
-      "id": 9
-    },
-    {
-      "artist": "Artista Random",
-      "title": "Title Random",
-      "cover_url": "",
-      "id": 10
-    },
-    {
-      "artist": "Artista Random3",
-      "title": "TitleRandom",
-      "cover_url": "",
-      "id": 11
-    },
-    {
-      "artist": "Manolo Escobar",
-      "title": "Mi carro",
-      "cover_url": "",
-      "id": 12
-    },
-    {
       "artist": "Monica Naranjo",
       "title": "Sobrevivire",
       "cover_url": "http://1.bp.blogspot.com/-KSxU5dB3ldw/U6YDChp9GcI/AAAAAAAAARU/cp0EK-SURc0/s1600/Minage.jpg",
       "id": 13
-    },
-    {
-      "artist": "Manolete",
-      "title": "El tio del carro",
-      "cover_url": "",
-      "id": 14
     }
   ]
 }
