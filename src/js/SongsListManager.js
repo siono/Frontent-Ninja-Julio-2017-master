@@ -47,8 +47,17 @@ export default class SongsListManager {
     }
 
     renderSong(song){
+        let cover_url = song.cover_url;
+        let srcset = "";
+        console.log(song.artist);
+        console.log(srcset);
+        if (cover_url == ""){
+            cover_url = "img/disk-150px.png";
+            srcset = 'srcset="img/disk-150px.png 150w, img/disk-250px.png 250w, img/disk-300px.png 300w"';
+        }
+
         return `<article class="song">
-                <img src="${song.cover_url}" alt="${song.artist} - ${song.title}" class="cover">
+                <img src="${song.cover_url}" alt="${song.artist} - ${song.title}" class="cover" class="cover"${srcset}>
                 <div class="artist">${song.artist}</div>
                 <div class="title">${song.title}</div>
             </article>`
